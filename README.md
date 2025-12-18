@@ -97,6 +97,15 @@ The Deep Learning model achieved the best results, benefiting from feature scali
 
 Paired t-tests confirmed that performance differences between Ridge and non-linear models were statistically significant (p < 0.05).
 
+### Visualization of Results
+
+<img width="640" height="627" alt="histo1" src="https://github.com/user-attachments/assets/ebdd8dfd-803b-4dbc-91c9-84e7b9ff19f1" />
+
+<img width="638" height="642" alt="histo2" src="https://github.com/user-attachments/assets/78c872d6-2490-4ed5-b777-85175864b0cd" />
+
+
+<img width="677" height="510" alt="loss curve" src="https://github.com/user-attachments/assets/f2f6088e-35a0-44cd-8412-7a7dbaaa39b0" />
+
 ## Conclusion
 This project demonstrates that non-linear models, particularly Random Forests and Neural Networks, significantly outperform linear regression for bike demand prediction. Deep learning offers competitive performance, especially when proper regularization and training strategies are applied. The results highlight the importance of model selection based on data complexity in real world regression problems.
 
