@@ -34,7 +34,7 @@ Scaled features for ML and deep learning models
 Train/validation/test split: 70% / 15% / 15%
 
 ## Methodology
-###Classical Machine Learning:
+### Classical Machine Learning:
 **1. Ridge Regression**
 Feature scaling applied
 Hyperparameter tuning done using GridSearchCV (alpha values)
