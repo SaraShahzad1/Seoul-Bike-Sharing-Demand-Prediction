@@ -19,7 +19,7 @@ Bike sharing has become an essential component of urban transportation. Accurate
 ## Dataset Description
 **Source:** https://www.kaggle.com/datasets/saurabhshahane/seoul-bike-sharing-demand-prediction
 
-**Size:** 8760 rows, 12+ columns
+**Size:** 8760 rows, 14 columns
 
 **Features:** Date, Hour, Temperature, Humidity, Wind speed, Visibility, Dew point, Solar radiation, Rainfall, Snowfall
 
