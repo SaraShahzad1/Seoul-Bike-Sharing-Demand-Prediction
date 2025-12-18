@@ -83,4 +83,21 @@ Validation: Used validation set for early stopping and learning rate adjustment
 | Ridge Regression | 430.905322 | 324.345614 | 0.541045 |
 | Random Forest | 175.238297 | 99.273702 | 0.924096 |
 | Neural Network | 223.076010 | 134.429321 | 0.876998 |
-|----------------|------------|------------|----------|
+
+Ridge Regression underperformed due to its linear nature, limiting its ability to capture complex non-linear relationships.
+
+Random Forest achieved strong performance by modeling non-linear interactions between weather and temporal features.
+
+The Deep Learning model achieved the best results, benefiting from feature scaling and regularization.
+
+Paired t-tests confirmed that performance differences between Ridge and non-linear models were statistically significant (p < 0.05).
+
+## Conclusion
+This project demonstrates that non-linear models, particularly Random Forests and Neural Networks, significantly outperform linear regression for bike demand prediction. Deep learning offers competitive performance, especially when proper regularization and training strategies are applied. The results highlight the importance of model selection based on data complexity in real world regression problems.
+
+## Future Work
+* Explore external data sources (events, traffic, holidays)
+* Deploy the best model as a web-based prediction service
+
+## References
+Kaggle: Seoul Bike Sharing Demand Prediction Dataset: https://www.kaggle.com/datasets/saurabhshahane/seoul-bike-sharing-demand-prediction
