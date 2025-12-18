@@ -15,3 +15,17 @@ Bike sharing has become an essential component of urban transportation. Accurate
 * Design and train deep neural networks.
 * Compare model performance using multiple metrics.
 * Conduct statistical significance testing for model comparison.
+
+## Dataset Description
+**Source:** https://www.kaggle.com/datasets/saurabhshahane/seoul-bike-sharing-demand-prediction
+**Size:** 8760 rows, 12+ columns
+**Features:**
+Date, Hour, Temperature, Humidity, Wind speed, Visibility, Dew point, Solar radiation, Rainfall, Snowfall
+**Categorical features:** Seasons, Holiday, Functioning Day
+**Target:** Rented Bike Count
+
+**Preprocessing:**
+Converted Date to day, month, weekday
+One-hot encoded categorical variables
+Scaled features for ML and deep learning models
+Train/validation/test split: 70% / 15% / 15%
