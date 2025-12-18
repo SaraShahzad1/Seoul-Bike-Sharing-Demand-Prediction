@@ -82,6 +82,8 @@ Validation: Used validation set for early stopping and learning rate adjustment
 
 * Significance threshold: p < 0.05
 
+<img width="396" height="48" alt="stat cal" src="https://github.com/user-attachments/assets/96531d4f-239f-4d9d-a262-f82844e4e891" />
+
 ## Results and Analysis
 | Model | RMSE | MAE | R^2 |
 |-------|------|-----|-----|
