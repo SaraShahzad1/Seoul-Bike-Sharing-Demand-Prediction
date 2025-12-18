@@ -36,13 +36,16 @@ Train/validation/test split: 70% / 15% / 15%
 ## Methodology
 ### Classical Machine Learning
 **1. Ridge Regression**
+Linear regression with l2 norm
+
 Feature scaling applied
 
 Hyperparameter tuning done using GridSearchCV (alpha values)
 
-5-fold cross-validation for robust evaluation
+Regularization parameter alpha tuned using 5-fold cross-validation
 
 **2. Random Forest Regressor**
+Ensemble-based non-linear model
 
 Hyperparameter tuning done using RandomizedSearchCV
 
@@ -50,7 +53,7 @@ Parameters tuned: n_estimators, max_depth, min_samples_split, min_samples_leaf
 
 ### Deep Learning
 
-Architecture: Fully connected feedforward neural network with 3 hidden layers (128, 64, 32 neurons)
+Architecture: Fully connected neural network with 3 hidden layers (128, 64, 32 neurons) all using ReLu axitivation
 
 Regularization: Dropout (0.3), BatchNormalization
 
@@ -60,9 +63,24 @@ Validation: Used validation set for early stopping and learning rate adjustment
 
 ### Evaluation & Comparison
 
-**Metrics:** RMSE, MAE, R²
+**Metrics**
+* Root Mean Squared Error (RMSE)
 
-**Statistical Significance Testing:** Paired t-test between models’ squared errors
+* Mean Absolute Error (MAE)
+
+* Coefficient of Determination (R²)
+
+**Statistical Significance Testing**
+* Paired t-test applied on squared prediction errors
+
+* Ensures fair comparison using the same test set
+
+* Significance threshold: p < 0.05
 
 ## Results and Analysis
-
+| Model | RMSE | MAE | R^2 |
+|-------|------|-----|-----|
+| Ridge Regression | 430.905322 | 324.345614 | 0.541045 |
+| Random Forest | 175.238297 | 99.273702 | 0.924096 |
+| Neural Network | 223.076010 | 134.429321 | 0.876998 |
+|----------------|------------|------------|----------|
