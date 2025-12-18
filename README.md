@@ -34,24 +34,34 @@ Scaled features for ML and deep learning models
 Train/validation/test split: 70% / 15% / 15%
 
 ## Methodology
-### Classical Machine Learning:
+### Classical Machine Learning
 **1. Ridge Regression**
 Feature scaling applied
+
 Hyperparameter tuning done using GridSearchCV (alpha values)
+
 5-fold cross-validation for robust evaluation
 
 **2. Random Forest Regressor**
+
 Hyperparameter tuning done using RandomizedSearchCV
+
 Parameters tuned: n_estimators, max_depth, min_samples_split, min_samples_leaf
 
 ### Deep Learning
+
 Architecture: Fully connected feedforward neural network with 3 hidden layers (128, 64, 32 neurons)
+
 Regularization: Dropout (0.3), BatchNormalization
+
 Training: Adam optimizer, MSE loss, EarlyStopping, ReduceLROnPlateau
+
 Validation: Used validation set for early stopping and learning rate adjustment
 
 ### Evaluation & Comparison
+
 **Metrics:** RMSE, MAE, R²
+
 **Statistical Significance Testing:** Paired t-test between models’ squared errors
 
 
