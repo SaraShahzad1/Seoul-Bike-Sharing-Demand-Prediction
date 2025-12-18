@@ -31,7 +31,10 @@ Bike sharing has become an essential component of urban transportation. Accurate
 Converted Date to day, month, weekday
 One-hot encoded categorical variables
 Scaled features for ML and deep learning models
-Train/validation/test split: 70% / 15% / 15%
+|  | Training | Validation | Testing | 
+|-------|------|-----|-----|
+|Percentage|70%|15%|15%|
+
 
 ## Methodology
 ### Classical Machine Learning
